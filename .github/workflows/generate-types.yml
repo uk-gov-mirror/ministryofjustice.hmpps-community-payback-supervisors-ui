@@ -2,7 +2,8 @@ name: Generate Types
 
 on:
   workflow_dispatch:
-  workflow_call:
+  pull_request:
+    types: [converted_to_draft]
 
 permissions:
   contents: write
